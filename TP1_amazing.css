@@ -39,12 +39,10 @@ li:first-of-type + li {
   color: red;
 }
 #tue h2 + span,
-#tue h2 + span + div,
 #tue div span:first-child {
   color: blue;
 }
-#tue span:nth-of-type(2),
-#tue span:nth-of-type(2) + div span {
+#tue span:nth-of-type(2) {
   font-size: 200%;
 }
 
