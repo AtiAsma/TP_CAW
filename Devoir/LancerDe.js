@@ -4,7 +4,7 @@ import dice3 from "./images/3.png";
 import dice4 from "./images/4.png";
 import dice5 from "./images/5.png";
 import dice6 from "./images/6.png";
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import De from "./De.js";
 import "./LancerDe.css";
 
@@ -15,8 +15,6 @@ function LancerDe() {
   const [de2, setDe2] = useState(dice6);
   const [result, setResult] = useState();
   const [score, setScore] = useState(0);
-
-  const resultDe = useRef(null);
 
   const lancer = () => {
     const firstRandomNum = Math.floor(Math.random() * 6);
@@ -50,9 +48,9 @@ function LancerDe() {
         <De face={de2} />
       </div>
 
-      <p ref={resultDe}>{result}</p>
-      <button onClick={lancer}>Lancer les Dés</button>
-      <button onClick={reset}>reset</button>
+      <p>{result}</p>
+      <button className="btn" onClick={lancer}>Lancer les Dés</button>
+      <button className="btn reset" onClick={reset}>reset</button>
       <p>Le score est : {score}</p>
     </>
   );
