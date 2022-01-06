@@ -1,5 +1,32 @@
+body {
+  background-color: #a9a9a9;
+}
+
 .dice-area {
   margin: 0px 50px;
   text-align: center;
   display: inline-block;
+}
+
+.btn {
+  background-color: #a52a2a;
+  border: none;
+  outline: none;
+  padding: 1.5rem 0;
+  width: 15rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  color: #faebd7;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: #faebd7;
+  color: #a52a2a;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 3rem 0;
 }
